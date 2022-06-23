@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'restaurant';
+  feature:string = 'recipes'
+
+  selectMenu(feature:string){
+    this.feature = feature
+  }
 }
